@@ -13,7 +13,7 @@ const Stack = createStackNavigator();
 
 export default props => {
   return (
-        <NavigationContainer>
+        <NavigationContainer >
             <Stack.Navigator
                 initialRouteName="UserList"
                 screenOptions={screenOptions}>
@@ -28,7 +28,7 @@ export default props => {
                             <Button
                             onPress={() => navigation.navigate("UserForm")}
                             type="clear"
-                            icon={<Icon name="add" size={30} color="#000" />}
+                            icon={<Icon name="add" size={30} color="#FFF" />}
                             />
                         )
                     }
@@ -52,8 +52,10 @@ const screenOptions = {
         backgroundColor: '#36F'
         
     },
-    headerTintColor: '#000',
+    headerTintColor: '#FFF',
     headerTitleStyle: {
         fontWeight: 'bold'
     }
 }
+
+
