@@ -2,7 +2,9 @@ import React, { useContext, useState } from 'react'
 import {Text, View, TextInput, StyleSheet, Button} from 'react-native'
 import UsersContext from '../context/UsersContext'
 
-export default ({route, navigation}) => {
+function UserForm({route, navigation}) {
+
+
    const [user, setUser] = useState(route.params ? route.params: {})
    const { dispatch }= useContext (UsersContext)
 
@@ -53,3 +55,6 @@ const style = StyleSheet.create({
 
     }
 }) 
+
+
+export default UserForm;

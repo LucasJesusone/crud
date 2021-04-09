@@ -8,11 +8,13 @@ import { Button, Icon } from 'react-native-elements';
 import { UsersProvider } from './context/UsersContext';
 
 
+const apiUrl = "http://localhost:8080/service/user"
 
 
 const Stack = createStackNavigator();
 
 export default props => {
+    
   return (
       <UsersProvider>
         <NavigationContainer >

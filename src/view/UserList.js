@@ -3,7 +3,11 @@ import {Alert, FlatList, View} from 'react-native'
 import { ListItem, Button, Icon } from 'react-native-elements'
 import UsersContext from '../context/UsersContext'
 
-export default props => {
+
+
+function UserList (props) {
+    
+    
 
     const { state, dispatch } = useContext(UsersContext)
 
@@ -25,7 +29,6 @@ export default props => {
         ])
     }
    
-
 
     const getUser = ({item: user}) => {
         return (
@@ -56,6 +59,9 @@ export default props => {
         )
     }
     
+        
+
+    
     return (
         <View>
             <FlatList 
@@ -67,3 +73,4 @@ export default props => {
     )
 }
 
+export default UserList;

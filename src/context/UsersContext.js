@@ -2,7 +2,10 @@ import React, { createContext, useReducer } from 'react'
 import users from '../data/users'
 
 const initialState = {users}
-const UsersContext = createContext({})
+
+
+export const UsersContext = createContext({})
+
 
 
 const actions = {
@@ -47,4 +50,4 @@ export const UsersProvider = props => {
     )
 } 
 
-export default UsersContext
+
